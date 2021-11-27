@@ -1,4 +1,4 @@
-from swapElements import swapElements
+from Functions.swapElements import swapElements
 
 def bubbelSort(inputData):
     loopCounter = 0;

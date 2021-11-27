@@ -1,6 +1,6 @@
-from insertionSort import insertionSort
-from bubbelSort import bubbelSort
-from generateData import generateData
+from Algorithms.insertionSort import insertionSort
+from Algorithms.bubbelSort import bubbelSort
+from DataGenerators.generateData import generateData
 
 c = 0;
 while(c < 20):
