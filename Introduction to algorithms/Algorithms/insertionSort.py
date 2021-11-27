@@ -1,3 +1,4 @@
+## operates on integer lists
 def insertionSort(inputData):
     print("The raw input data is: ", inputData);
     sortedData = [];

@@ -1,5 +1,6 @@
 from Functions.swapElements import swapElements
 
+## operates on integer lists
 def bubbelSort(inputData):
     loopCounter = 0;
     while(loopCounter < len(inputData)):

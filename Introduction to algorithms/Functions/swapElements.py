@@ -1,3 +1,4 @@
+## takes a input and two integers as input, it then swaps the elements in the indecies indicated by the input
 def swapElements(inputList, index_1, index_2):
     if(index_1 == index_2):
         return inputList;
