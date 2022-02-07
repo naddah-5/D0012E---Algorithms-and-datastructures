@@ -1,4 +1,4 @@
-from binaryArray import binaryArray;
+from utils.dataGenerators.binaryArray import binaryArray
 
 def binaryIntegerAdder(n):
     a = binaryArray(n)

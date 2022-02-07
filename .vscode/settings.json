@@ -1,5 +1,6 @@
 {
     "python.analysis.extraPaths": [
-        "./Introduction to algorithms/DataGenerators"
+        "./Introduction to algorithms/algorithms",
+        "./Introduction to algorithms/utils"
     ]
 }
