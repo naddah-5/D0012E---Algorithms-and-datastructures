@@ -1,14 +1,28 @@
-from mergeInsert import mergeInsert
 from random import randrange;
 
 
-def integerArray(size, maxValue):
-    i = 0
-    inputData = []
-    while (i<size):
-        inputData.append(randrange(maxValue))
-        i = i+1
-    return inputData
+def mergeInsert(list, key):
+    n = len(list)
+    topIndex = n
+    bottomIndex = 0
+    midPoint = topIndex // 2
+    subListLength = topIndex - bottomIndex
+
+    while subListLength > 0:
+        if list[midPoint] == key:
+            break
+        elif list[midPoint] > key:
+            topIndex = midPoint
+            midPoint = bottomIndex + ((topIndex - bottomIndex) // 2)
+            subListLength = topIndex - bottomIndex
+        elif list[midPoint] <= key:
+            bottomIndex = midPoint + 1
+            midPoint = bottomIndex + ((topIndex - bottomIndex) // 2)
+            subListLength = topIndex - bottomIndex
+
+    list.insert(midPoint, key)
+    return list
+
 
 def bSort(list):
     sortedList = []
@@ -16,7 +30,3 @@ def bSort(list):
         x = list.pop(0)
         sortedList = mergeInsert(sortedList, x)
     return sortedList
-
-A = integerArray(100, 10)
-print(A)
-print(bSort(A))
