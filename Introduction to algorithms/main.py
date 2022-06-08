@@ -5,7 +5,7 @@ from algorithms.bubbelSort import bubbelSort
 from utils.dataGenerators.integerArray import integerArray
 from exercices.chapterTwo.binaryAddition import binaryIntegerAdder
 
-os.system('clear')
+os.system('cls')
 
 """
 inputData = integerArray(100, 100)
